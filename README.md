@@ -8,6 +8,14 @@ For more information, see the [Bootstrap Zero](http://bootstrap-zero.tumblr.com/
 blog (you might want to go to its [archive](http://bootstrap-zero.tumblr.com/archive)
 and read the posts in chronological order.)
 
-This repository will contain supporting tools (e.g. the front-panel simulator)
-and maybe, at some point, binary memory images, and text files containing
-disassembled machine code that was entered.
+This repository contains the supporting tools, written in BASIC:
+
+*   `binloader`, the first version of the simulated bit-entering facility,
+    used in the warm-up
+*   `frontpanel`, the improved version of the front-panel simulator,
+    used to enter SITU-MON
+
+BASIC sources for these are in `src`; the tokenized PRG files are in `bin`.
+
+This repository might, at some point, also contain binary memory images, and
+text files containing disassembled machine code that was entered.
