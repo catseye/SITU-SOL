@@ -34,7 +34,7 @@ Reference Guide, but basically it's
 
 *   Address of the code to run for cold boot when the cartridge is
     plugged in — which will be our startup code at $8009.
-*   Address of the code to run for cold boot when the cartridge is
+*   Address of the code to run for warm boot when the cartridge is
     plugged in.  I'll just use $FEBC, which I picked up somewhere along
     my travels as a "magic address" to assign to the warm-boot vector to
     disable RUN/STOP-RESTORE.  In fact, if you look at the code at that
@@ -47,8 +47,8 @@ What startup code do we need?  It's described (sort of) on page 269.  Reading
 it, and the description of the KERNAL routines in pages 274-306, it's apparent
 that it calls the KERNAL routines `IOINIT`, `RAMTAS`, and `CINT`.  What's
 less apparent is that it also calls `RESTOR` before `CINT`.  This took a
-little testing (and a peek at a disassmbly of the KERNAL's `RESET` routine)
-to figure out.  It would have been nice if the Guide had just names the 
+little testing (and a peek at a disassembly of the KERNAL's `RESET` routine)
+to figure out.  It would have been nice if the Guide had just named the 
 KERNAL routines involved.  But oh well.  Here's my chicken-scratches:
 
 ![](images/chicken-scratches.jpg)
@@ -66,9 +66,9 @@ Those `POKE`s change BASIC's idea of where the BASIC program begins and
 ends in memory, effectively tricking it into saving $8000-$8FFF.  Yes, OK,
 this is only a 4K cartridge image, but that should be fine for now.  And
 there is a small caveat: when you save a memory image like this, the first
-two bytes contain the load address.  VICE seems to understand this, for
-cartridge images, but other tools, such as an EPROM burner, might not,
-because those two bytes would not be present on a real ROM itself.
+two bytes contain the load address.  VICE seems to understand this when you
+attach a cartridge image, but other tools, such as an EPROM burner, might
+not, because those two bytes would not be present on a real ROM itself.
 
 But first, there's a wrinkle.  When SITU-MON was written it was not given
 the ability to exit, so how do we even drop to BASIC?
@@ -87,7 +87,7 @@ make these changes, then using BASIC to save the cartridge image to disk:
 ![](images/creating-situ-mon-cartridge-image.png)
 
 Then... in VICE, select "Attach raw 8K cartridge image..." and select the
-file we just saved and voilá!
+file we just saved and voilà!
 
 ![](images/booted-from-situ-mon-cartridge-image.png)
 
