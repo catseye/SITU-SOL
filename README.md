@@ -4,19 +4,23 @@ SITU-SOL
 SITU-SOL is a programming environment for 6502-based computers that was
 written by hand during RetroChallenge 07/2015.
 
-For more information, see the [Bootstrap Zero](http://bootstrap-zero.tumblr.com/)
-blog (you might want to go to its [archive](http://bootstrap-zero.tumblr.com/archive)
-and read the posts in chronological order.)
+For more information, see the posts to the Bootstrap Zero blog, archived
+in this repo in [doc/bootstrap-zero/README.md](doc/bootstrap-zero/README.md).
+
+While SITU-SOL is quite generic, an emulated Commodore 64 was used to
+host it and test it during its development, so many of the instructions
+below are specific to the C64.
 
 Supporting tools
 ----------------
 
-This repository contains the following supporting tools, written in BASIC:
+This repository contains the following supporting tools, written in
+Commodore BASIC 2.0:
 
 *   `binloader`, the first version of the simulated bit-entering facility,
     used in the warm-up
 *   `frontpanel`, the improved version of the front-panel simulator,
-    used to enter SITU-MON
+    used to enter SITU-MON.  (This tool is also now known as SITU-PAN.)
 
 BASIC sources for these are in `src`; the tokenized PRG files are in `bin`.
 
@@ -35,20 +39,20 @@ Memory images
 *   `situ-mon` is a PRG file containing a dump of what memory $8100-$81FF
     looked like just after SITU-MON was entered and fixed.  You can run
     it from BASIC immediate mode like so:
-
+    
         LOAD "SITU-MON",8,1
         SYS 33024
-
+        
 *   `situ-sol` is a PRG file containing a dump of what memory $8100-$8520
     looked like just after SITU-SOL was entered and fixed.  It also includes
     SITU-MON — because SITU-SOL calls routines from it — and 256 bytes of
     almost-unused code between $8200 and $82FF.
-
+    
     It can be started from BASIC immediate mode like so:
-
+    
         LOAD "SITU-SOL",8,1
         POKE 2304,0:SYS 33830
-
+    
     But!  There is no symbal table.  (The `POKE 2304,0` is to stop SITU-SOL
     from mistakenly behaving as if there's a symbal table at that address,
     in case that byte isn't zero.)  You may wish to load a symbal table
