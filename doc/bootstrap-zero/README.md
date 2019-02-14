@@ -320,7 +320,7 @@ _July 12, 2015_
 
 Right! So almost as soon as I finished writing the code for SITU-MON, I started entering it into the emulated Commodore 64, using the simulated front-panel switches. At first this was in dribs and drabs, a few bytes here, a few bytes there.
 
-![](images/tumblr_inline_nrdfo71pHK1tvda25_540.png)
+![](images/tumblr_inline_nrdfo71pHK1tvda25_540.png?raw=true)
 
 I won't bore you with thousands of screenshots; it all looked basically as described in _A better front-panel simulator_, above. (And for what it would look like in the physical world, watch the video on the _Loading the code_ post.) It’s not difficult, exactly, it’s just tedious and fatiguing.
 
@@ -332,7 +332,7 @@ Then I realized what had happened. The SITU-MON code starts at $8100, but this i
 
 So I lowered the top of BASIC memory, and started all over again.
 
-![](images/tumblr_inline_nrd1ja5mUa1tvda25_540.png)
+![](images/tumblr_inline_nrd1ja5mUa1tvda25_540.png?raw=true)
 
 The second time doing this, at least, I was able to enter the bits much more quickly; I had had practice, and had a block of time to myself that I could dedicate to it. And when I reset the address to review the code, it was, in fact, the code I entered.
 
@@ -352,7 +352,7 @@ I looked back to the listing on paper and traced the execution path through it, 
 
 The first routine the code calls is `WRITE_PROMPT`. In the front-panel simulator, I advanced to the `WRITE_PROMPT` routine and executed it. And I got this:
 
-![](images/tumblr_inline_nrd28fzSOH1tvda25_540.png)
+![](images/tumblr_inline_nrd28fzSOH1tvda25_540.png?raw=true)
 
 Yeah, no, that definitely wasn’t in the spec.
 
@@ -364,7 +364,7 @@ So I took a bit of a mulligan. It was a small thing, and I could rationalize it 
 
 I converted the address of the `OUTPUTLN_TTY` routine to decimal (33153), dropped to BASIC, and `PEEK`’ed that address to see what byte was there. The first instruction of `OUTPUTLN_TTY` is `LDA #$00`, so I was expecting to see 169 ($A9), but...
 
-![](images/tumblr_inline_nrd2u9aQWY1tvda25_540.png)
+![](images/tumblr_inline_nrd2u9aQWY1tvda25_540.png?raw=true)
 
 Noticing that the byte just _before_ `OUTPUTLN_TTY` was $81, it occurred to me: maybe I made a mistake assigning addresses to labels.
 
