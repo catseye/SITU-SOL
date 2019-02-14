@@ -82,7 +82,7 @@ The most “cheating” part of this project will be avoiding the actual loading
 
 For the sake of example, assume we’ve already written a programming environment — the one that we want to put into our computer, a computer that doesn’t have any sort of programming environment on it yet. Assume we’ve written this program by hand, on paper… and that we’ve already converted it all into machine code.  The first line of it might look something like this:
 
-![](images/tumblr_inline_npj0dzr5L21tvda25_540.jpg)
+![](images/tumblr_inline_npj0dzr5L21tvda25_540.jpg?raw=true)
 
 …followed by many, many more lines.
 
@@ -100,7 +100,7 @@ Normally, the CPU is doing all this memory-access. But all these lines, **they�
 
 In fact, the front panels of some of the earliest home computers had switches and lights on them for just this purpose, like the Altair 8800 shown here:
 
-![](images/tumblr_inline_npj713CSRw1tvda25_540.jpg)
+![](images/tumblr_inline_npj713CSRw1tvda25_540.jpg?raw=true)
 
 And in the absence of any other hardware, **this was how you programmed it.** You flipped the switches to represent the binary value you wanted to write into memory, and pressed a button to write it.
 
@@ -118,7 +118,7 @@ switches according to a pre-arranged pattern?
 
 Indeed, this technology exists, and you have probably heard of it: the _punched card_.
 
-![](images/tumblr_inline_nqi14lL43P1tvda25_540.jpg)
+![](images/tumblr_inline_nqi14lL43P1tvda25_540.jpg?raw=true)
 
 At its simplest, a punchcard reader is barely any more complex than front-panel switches. When a card is inserted, switch contacts close where there are holes in the card, and stay open where
 there aren’t holes. And then that bit pattern gets written to memory. As a bonus, the punched card serves as a record of the bytes that were written to memory, and can be re-used.
@@ -182,33 +182,33 @@ The warm-up
 
 _July 3, 2015_
 
-![](images/tumblr_inline_nqxhbjR1Zh1tvda25_540.jpg)
+![](images/tumblr_inline_nqxhbjR1Zh1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nqr9iiQmY81tvda25_540.jpg)
-
-* * *
-
-![](images/tumblr_inline_nqr9ipKWZB1tvda25_540.jpg)
+![](images/tumblr_inline_nqr9iiQmY81tvda25_540.jpg?raw=true)
 
 * * *
 
-![](images/tumblr_inline_nqr9jfJpBU1tvda25_540.jpg)
+![](images/tumblr_inline_nqr9ipKWZB1tvda25_540.jpg?raw=true)
+
+* * *
+
+![](images/tumblr_inline_nqr9jfJpBU1tvda25_540.jpg?raw=true)
 
 * * *
 
 All written! Now, to load it (see _Loading the code_ above for details on this)...
 
-![](images/tumblr_inline_nqr9kqAnnd1tvda25_540.jpg)
+![](images/tumblr_inline_nqr9kqAnnd1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nqr9kwi0tG1tvda25_540.jpg)
+![](images/tumblr_inline_nqr9kwi0tG1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nqr9lkgX0n1tvda25_540.jpg)
+![](images/tumblr_inline_nqr9lkgX0n1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nqxheuHGdA1tvda25_540.jpg)
+![](images/tumblr_inline_nqxheuHGdA1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nqxhfrjk8j1tvda25_540.jpg)
+![](images/tumblr_inline_nqxhfrjk8j1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nqxhgdnJBX1tvda25_540.jpg)
+![](images/tumblr_inline_nqxhgdnJBX1tvda25_540.jpg?raw=true)
 
 A better front-panel simulator
 ------------------------------
@@ -219,19 +219,19 @@ One thing that disappointed me slightly during _The Warm-up_ was that the simula
 
 The front-panel simulator below works a lot like the 1802 Membership Card front panel (see _Loading the code_ for more details on that.)
 
-![](images/tumblr_inline_nr1av8OuMZ1tvda25_540.jpg)
+![](images/tumblr_inline_nr1av8OuMZ1tvda25_540.jpg?raw=true)
 
 The screen shows an approximation of 8 LEDs and 8 SPST switches that would be connected to the 8 data lines on a real front panel.
 
-![](images/tumblr_inline_nr19f04T6y1tvda25_540.jpg)
+![](images/tumblr_inline_nr19f04T6y1tvda25_540.jpg?raw=true)
 
 The keys on the bottom row of the keyboard move each switch down; the keys in the 2nd-to-bottom row move each switch up. (In an effort to be more realistic, they are not toggled by a single key.)
 
-![](images/tumblr_inline_nr19fai3D41tvda25_540.jpg)
+![](images/tumblr_inline_nr19fai3D41tvda25_540.jpg?raw=true)
 
 Pressing Return causes the binary value selected by the switches to be written to the current address in RAM. That value is then reflected in the LEDs.
 
-![](images/tumblr_inline_nr19flxudE1tvda25_540.jpg)
+![](images/tumblr_inline_nr19flxudE1tvda25_540.jpg?raw=true)
 
 Other simulated buttons (not show in the UI) are
 
@@ -250,66 +250,66 @@ _July 6, 2015_
 
 I decided, while I was writing all this code by hand, I might as well also write out some stuff about 6502 programming that I can never remember when I need it.
 
-![](images/tumblr_inline_nr2d6pZykG1tvda25_540.jpg)
+![](images/tumblr_inline_nr2d6pZykG1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d7al9he1tvda25_540.jpg)
+![](images/tumblr_inline_nr2d7al9he1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4dif0mwk1tvda25_540.jpg)
+![](images/tumblr_inline_nr4dif0mwk1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d7jFcv61tvda25_540.jpg)
+![](images/tumblr_inline_nr2d7jFcv61tvda25_540.jpg?raw=true)
 
 Sketches of the design and code for the machine-language monitor. It was basically written three times; once in pencil, once with a ballpoint pen, and the final version (not shown here, coming soon!) with fineliners.
 
-![](images/tumblr_inline_nr2d7pw2iS1tvda25_540.jpg)
+![](images/tumblr_inline_nr2d7pw2iS1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2sx2a8Qs1tvda25_540.jpg)
+![](images/tumblr_inline_nr2sx2a8Qs1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d80BPRW1tvda25_540.jpg)
+![](images/tumblr_inline_nr2d80BPRW1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d89ZDc21tvda25_540.jpg)
+![](images/tumblr_inline_nr2d89ZDc21tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d8lfBmD1tvda25_540.jpg)
+![](images/tumblr_inline_nr2d8lfBmD1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d90BXxP1tvda25_540.jpg)
+![](images/tumblr_inline_nr2d90BXxP1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d9rK7M71tvda25_540.jpg)
+![](images/tumblr_inline_nr2d9rK7M71tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr2d9wo2q71tvda25_540.jpg)
+![](images/tumblr_inline_nr2d9wo2q71tvda25_540.jpg?raw=true)
 
 SITU-MON
 --------
 
 _July 9, 2015_
 
-![](images/tumblr_inline_nr4holCA4X1tvda25_540.jpg)
+![](images/tumblr_inline_nr4holCA4X1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hosyQAs1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hosyQAs1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hp8XGSf1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hp8XGSf1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hpmbakm1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hpmbakm1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hpsIKia1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hpsIKia1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hpyN6841tvda25_540.jpg)
+![](images/tumblr_inline_nr4hpyN6841tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hq8dN861tvda25_540.jpg)
+![](images/tumblr_inline_nr4hq8dN861tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hqngl9V1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hqngl9V1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hqsGRxP1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hqsGRxP1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hr03Mce1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hr03Mce1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hr8HQh41tvda25_540.jpg)
+![](images/tumblr_inline_nr4hr8HQh41tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hrdRrgc1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hrdRrgc1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hrkdfFw1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hrkdfFw1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hrqEraH1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hrqEraH1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nr4hrz45NF1tvda25_540.jpg)
+![](images/tumblr_inline_nr4hrz45NF1tvda25_540.jpg?raw=true)
 
 I love bits. Bits are great when you’re coding and you want 2,000 of something
 ------------------------------------------------------------------------------
@@ -370,29 +370,29 @@ Noticing that the byte just _before_ `OUTPUTLN_TTY` was $81, it occurred to me: 
 
 So I read over the code again, and, indeed.
 
-![](images/tumblr_inline_nrd676kT5h1tvda25_540.jpg)
+![](images/tumblr_inline_nrd676kT5h1tvda25_540.jpg?raw=true)
 
 See the problem?
 
 So! A bit painful that this mis-numbering happened so early in the code, but, there was nothing to be done except to go through it all and correct the addresses:
 
-![](images/tumblr_inline_nrd69wRzNL1tvda25_540.jpg)
+![](images/tumblr_inline_nrd69wRzNL1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrd6ac4zJw1tvda25_540.jpg)
+![](images/tumblr_inline_nrd6ac4zJw1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrd6asawdr1tvda25_540.jpg)
+![](images/tumblr_inline_nrd6asawdr1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrd6b59cBw1tvda25_540.jpg)
+![](images/tumblr_inline_nrd6b59cBw1tvda25_540.jpg?raw=true)
 
 And then, back to the front-panel simulator. Reset the address to the beginning. Keep advancing the address until you get to the next byte that needs correcting, enter the new byte, repeat. A little nerve-wracking, but not terribly difficult, because I was getting pretty used to this by now...
 
 Then, reset the address to the beginning again, and… execute!
 
-![](images/tumblr_inline_nrd66akZir1tvda25_540.png)
+![](images/tumblr_inline_nrd66akZir1tvda25_540.png?raw=true)
 
 Hey! That looks... like what I expected! Let’s see if it works:
 
-![](images/tumblr_inline_nrdcglfU4p1tvda25_540.png)
+![](images/tumblr_inline_nrdcglfU4p1tvda25_540.png?raw=true)
 
 It works! It works!
 
@@ -400,21 +400,21 @@ This is a very nice feeling — one that makes up for the earlier disappointment
 
 So now... we have a machine-code monitor! It’s crude and ugly, but it does the trick, and it’s small — 250 bytes, or maybe 251 bytes now, because of the addressing correction? I’m not sure, but it’s still less than 255 bytes, and that’s great.
 
-![](images/tumblr_inline_nrdcf8U9We1tvda25_540.jpg)
+![](images/tumblr_inline_nrdcf8U9We1tvda25_540.jpg?raw=true)
 
 We’re not done, though! A machine-language monitor is a _kind of_ a programming environment, but it’s not a very good one. We won’t have to convert anything to binary, and entering lines on a keyboard is a lot easier than using front-panel switches. But we do still need to hand-assemble our code to hex, and compute addresses and so forth, which means we’ll still be using paper a lot.
 
 Here’s an example of how much easier it will be, though. It’s a fancier version of the warm-up exercise, the “echo” program. It displays a sort of prompt between lines, and lets you quit by starting the line with a period.
 
-![](images/tumblr_inline_nrdcfwfVun1tvda25_540.jpg)
+![](images/tumblr_inline_nrdcfwfVun1tvda25_540.jpg?raw=true)
 
 Note that, since we don’t have to convert to binary anymore, we can format the listing on paper more compactly. Entering and reviewing and running it is a matter of a few monitor commands:
 
-![](images/tumblr_inline_nrdcwtBdJt1tvda25_540.png)
+![](images/tumblr_inline_nrdcwtBdJt1tvda25_540.png?raw=true)
 
 And we test it a bit to make sure that it works as designed...
 
-![](images/tumblr_inline_nrdcxeiBNf1tvda25_540.png)
+![](images/tumblr_inline_nrdcxeiBNf1tvda25_540.png?raw=true)
 
 I’m quite happy with this!
 
@@ -425,45 +425,45 @@ SITU-SOL
 
 _July 26, 2015_
 
-![](images/tumblr_inline_nrzvpv3cLI1tvda25_540.jpg)
+![](images/tumblr_inline_nrzvpv3cLI1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrzwgcclo91tvda25_540.jpg)
+![](images/tumblr_inline_nrzwgcclo91tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrzvqgXQfp1tvda25_540.jpg)
+![](images/tumblr_inline_nrzvqgXQfp1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrzvqyNVaf1tvda25_540.jpg)
+![](images/tumblr_inline_nrzvqyNVaf1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrzvrcdNt41tvda25_540.jpg)
+![](images/tumblr_inline_nrzvrcdNt41tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrzvsmnZih1tvda25_540.jpg)
+![](images/tumblr_inline_nrzvsmnZih1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrzvrp1ZbY1tvda25_540.jpg)
+![](images/tumblr_inline_nrzvrp1ZbY1tvda25_540.jpg?raw=true)
 
 Now, the program listing! No, wait — I don’t want you to get the impression that this just appeared fully-formed on paper. So, first, I’ll ask you to imagine about 30 sheets of paper that looked something like this:
 
-![](images/tumblr_inline_nrzx8z4FaS1tvda25_540.jpg)
+![](images/tumblr_inline_nrzx8z4FaS1tvda25_540.jpg?raw=true)
 
 OK, now the program listing!
 
-![](images/tumblr_inline_nrvw3yUlEx1tvda25_540.jpg)
+![](images/tumblr_inline_nrvw3yUlEx1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvw4g36bA1tvda25_540.jpg)
+![](images/tumblr_inline_nrvw4g36bA1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvupnPebC1tvda25_540.jpg)
+![](images/tumblr_inline_nrvupnPebC1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvuprwkNT1tvda25_540.jpg)
+![](images/tumblr_inline_nrvuprwkNT1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvupwdWX91tvda25_540.jpg)
+![](images/tumblr_inline_nrvupwdWX91tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvv2u0j8d1tvda25_540.jpg)
+![](images/tumblr_inline_nrvv2u0j8d1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvv318iAj1tvda25_540.jpg)
+![](images/tumblr_inline_nrvv318iAj1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvv39RAu01tvda25_540.jpg)
+![](images/tumblr_inline_nrvv39RAu01tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvv3ejZHU1tvda25_540.jpg)
+![](images/tumblr_inline_nrvv3ejZHU1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvv3lkICJ1tvda25_540.jpg)
+![](images/tumblr_inline_nrvv3lkICJ1tvda25_540.jpg?raw=true)
 
 ...
 
@@ -471,21 +471,21 @@ All written and hand-assembled!
 
 At this point it’s handy to have a list of the entry points, so I wrote that up too:
 
-![](images/tumblr_inline_nrvw5etEln1tvda25_540.jpg)
+![](images/tumblr_inline_nrvw5etEln1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrvw6d9snl1tvda25_540.jpg)
+![](images/tumblr_inline_nrvw6d9snl1tvda25_540.jpg?raw=true)
 
 Now, to enter it... luckily, entering hex digits with SITU-MON is a lot easier than entering bits using front-panel switches.
 
-![](images/tumblr_inline_nrvwdeHmFt1tvda25_540.png)
+![](images/tumblr_inline_nrvwdeHmFt1tvda25_540.png?raw=true)
 
-![](images/tumblr_inline_nrvy8qIiJh1tvda25_540.png)
+![](images/tumblr_inline_nrvy8qIiJh1tvda25_540.png?raw=true)
 
-![](images/tumblr_inline_nrvy8xy0h61tvda25_540.png)
+![](images/tumblr_inline_nrvy8xy0h61tvda25_540.png?raw=true)
 
-![](images/tumblr_inline_nrvy92hoW91tvda25_540.png)
+![](images/tumblr_inline_nrvy92hoW91tvda25_540.png?raw=true)
 
-![](images/tumblr_inline_nrvy99cwPG1tvda25_540.png)
+![](images/tumblr_inline_nrvy99cwPG1tvda25_540.png?raw=true)
 
 All done!
 
@@ -497,9 +497,9 @@ Other errors — I had to test the program first.
 
 And in order to test it, I needed to have a symbal table for it to work on. I made one up with two very simple “commands” whose effect would be both obvious to see, and non-intrusive on the rest of the system. I decided to have them call two of the simpler routines present in SITU-MON (`WRITE_PROMPT` and `INCR_ADDR`). (And yes, you’re right, they should really be called `$ADDR` and `$INC`, with the dollar signs — thank you for paying attention to the spec. But, this was just to test...)
 
-![](images/tumblr_inline_nrvv4mqr641tvda25_540.jpg)
+![](images/tumblr_inline_nrvv4mqr641tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_nrw4c1iXf71tvda25_540.png)
+![](images/tumblr_inline_nrw4c1iXf71tvda25_540.png?raw=true)
 
 I wrote the test driver so that I could A8200 then G in 
 SITU-MON, enter a few symbals, and then, after it returned to SITU-MON, 
@@ -519,13 +519,13 @@ from the accumulator. Luckily the fix was easy: add a new entry point called
 
 Once I fixed that, I was able to compile simple “programs”:
 
-![](images/tumblr_inline_nrw4gcaz1J1tvda25_540.png)
+![](images/tumblr_inline_nrw4gcaz1J1tvda25_540.png?raw=true)
 
 There was still one more bug. The code generated when compiling a `!` (repeat) was wrong — it was jumping one byte too far back in memory. Once spotted, that was another easy fix. And then...
 
-![](images/tumblr_inline_ns3yny81dG1tvda25_540.png)
+![](images/tumblr_inline_ns3yny81dG1tvda25_540.png?raw=true)
 
-![](images/tumblr_inline_ns3yoeoq9e1tvda25_540.png)
+![](images/tumblr_inline_ns3yoeoq9e1tvda25_540.png?raw=true)
 
 Huzzah!
 
@@ -590,23 +590,23 @@ Now, I _did_ design SITU-SOL to support these things... and I _have_ written cod
 
 The code for `$SYMBALS`:
 
-![](images/tumblr_inline_ns755p3Sz51tvda25_540.jpg)
+![](images/tumblr_inline_ns755p3Sz51tvda25_540.jpg?raw=true)
 
 Dumping the contents of a symbal:
 
-![](images/tumblr_inline_ns755k2lm71tvda25_540.jpg)
+![](images/tumblr_inline_ns755k2lm71tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_ns756fINuA1tvda25_540.jpg)
+![](images/tumblr_inline_ns756fINuA1tvda25_540.jpg?raw=true)
 
 Replacing all calls to symbal1 with calls to symbal2:
 
-![](images/tumblr_inline_ns7565MTzC1tvda25_540.jpg)
+![](images/tumblr_inline_ns7565MTzC1tvda25_540.jpg?raw=true)
 
-![](images/tumblr_inline_ns755u00Fn1tvda25_540.jpg)
+![](images/tumblr_inline_ns755u00Fn1tvda25_540.jpg?raw=true)
 
 Calling those last two routines from the interactive prompt, with `/D SYMBAL` to dump and `/R SYMBAL1 SYMBAL2` to replace calls to symbals:
 
-![](images/tumblr_inline_ns756b1crZ1tvda25_540.jpg)
+![](images/tumblr_inline_ns756b1crZ1tvda25_540.jpg?raw=true)
 
 So, if the point of this project was to write the code by hand, I can indeed say I have written those routines by hand! Not assembled, entered, or tested... but written, yes!
 
